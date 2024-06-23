@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DM tools</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="mob-tracker"></div>
+        <div id="time-tracker"></div>
+        <div id="NPC-tracker">
+            <h2>NPC tracker</h2>
+            <div id="NPC-tracker-addNPC">
+                <div class="flex-column-center">
+                    <p>Nom</p>
+                    <input id="NPC-tracker-addNPC-name" type="text">
+                </div>
+                <div class="flex-column-center">
+                    <p>Localisation</p>
+                    <input id="NPC-tracker-addNPC-localisation" type="text">
+                </div>
+                <div class="flex-column-center">
+                    <p>Commentaire</p>
+                    <input id="NPC-tracker-addNPC-text" type="text">
+                </div>
+                <button id="addButton">Ajouter</button>
+            </div>
+            <div class="NPC-tracker-NPC">
+                <div class="NPC-tracker-NPC-info">
+                    <div class="NPC-tracker-NPC-info-haut">
+                        <div>
+                            <p class="NPC-tracker-NPC-info-haut-name">PNJ</p>
+                            <input class="NPC-tracker-NPC-info-haut-name-input" style="display: none" type="text">
+                            <p class="NPC-tracker-NPC-info-haut-localisation">Localisation</p>
+                            <input class="NPC-tracker-NPC-info-haut-localisation-input" style="display: none"
+                                type="text">
+                        </div>
+                    </div>
+                    <div class="NPC-tracker-NPC-info-bas">
+                        <p class="NPC-tracker-NPC-info-bas-comment">Placeholder</p>
+                        <input class="NPC-tracker-NPC-info-bas-comment-input" style="display: none" type="text">
+                    </div>
+                </div>
+
+                <div class="NPC-tracker-stats">
+                    <div class="NPC-tracker-stats-strenght NPC-tracker-stats-rows">
+                        <i class="fa-solid fa-hand-fist"></i>
+                        <input class="stats-input" type="number">
+                    </div>
+                    <div class="NPC-tracker-stats-agility NPC-tracker-stats-rows">
+                        <i class="fa-solid fa-person-running"></i>
+                        <input class="stats-input" type="number">
+
+                    </div>
+                    <div class="NPC-tracker-stats-willpower NPC-tracker-stats-rows">
+                        <i class="fa-solid fa-brain"></i>
+                        <input class="stats-input" type="number">
+                    </div>
+                </div>
+
+                <div class="NPC-tracker-NPC-boutons">
+                    <div class="deathdiv">
+                        <p>Mort?</p>
+                        <input class="deathbox" type="checkbox">
+                    </div>
+                    <i class="fa-solid fa-feather"></i>
+                    <i class="fa-solid fa-trash-can" style="width: 40px;"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="noteboard"></div>
+    </div>
+    <script src="https://kit.fontawesome.com/b7687bb56a.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
